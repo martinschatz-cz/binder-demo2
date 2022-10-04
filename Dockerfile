@@ -9,12 +9,12 @@ RUN apt install -y python3-pip
 
 RUN pip3 install jupyterhub
 
-WORKDIR /home/jovyan
-ENV HOME /home/jovyan
+WORKDIR /home/schatzm
+ENV HOME /home/schatzm
 
-COPY . /home/jovyan
-RUN useradd -m -u 1000 jovyan
-RUN chown -R 1000:1000 /home/jovyan
+COPY . /home/schatzm
+RUN useradd -m -u 1000 schatzm
+RUN chown -R 1000:1000 /home/schatzm
 
 ENTRYPOINT []
 
